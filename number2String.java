@@ -1,4 +1,4 @@
-package viracommerce;
+package myPackage;
 
 import java.util.ArrayList;
 
@@ -70,10 +70,6 @@ public class number2String {
                     part = (adad.toString().subSequence(0, Index)).toString();
                 } else {
                     Index = ((Integer.toString(adad.intValue()).length()) - (i * 3)) + 1;
-//                    System.out.println("adad.intValue() " + (Integer.toString(adad.intValue())).subSequence(3, 4));
-//                    System.out.println("besh " + besh);
-//                    System.out.println("Index " + Index);
-//                    System.out.println("ppp " + Integer.toString(adad.intValue()).length());
                     part = (Integer.toString(adad.intValue()).subSequence(Index - 1, Integer.toString(adad.intValue()).length() - besh)).toString();
                     besh += 3;
                 }
@@ -92,9 +88,6 @@ public class number2String {
                     mum1 = part.subSequence(0, 1).toString();
                     mum2 = part.subSequence(1, 2).toString();
                     mum3 = part.subSequence(2, 3).toString();
-//                    System.out.println("mum1 " + mum1);
-//                    System.out.println("mum2 " + mum2);
-//                    System.out.println("mum3 " + mum3);
                     Digit1 = Sadgan[Integer.parseInt(mum1) - 1];
                     if (mum2.equals("1")) {
                         Digit2 = Dah[Integer.parseInt(mum3)];
@@ -107,7 +100,6 @@ public class number2String {
                                 Digit2 =  (Yekan[Integer.parseInt(mum3) - 1]);
 //                                Digit2 = (Dahgan[Integer.parseInt(mum2) - 2]) + And + (Yekan[Integer.parseInt(mum3) - 1]);
                             }
-//                            System.out.println("#(Dahgan[Integer.parseInt(mum2) - 2]) " + (Dahgan[Integer.parseInt(mum2) - 2]));
 
                         } else {
                             if (mum3.equals("0")) {
